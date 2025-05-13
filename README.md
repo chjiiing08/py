@@ -11,7 +11,7 @@
 - Python
 - OpenWeather API (혹은 다른 날씨 API)
 - Kakao i Open Builder (카카오톡 챗봇 API)
-- MySQL 데이터 저장
+- MySQL (데이터 저장)
 
 ## 🧑‍💻 팀원 역할
 | 이름   | 역할 |
