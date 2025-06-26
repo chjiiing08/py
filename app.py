@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
 import os
+from webhook import webhook 
 
 app = Flask(__name__)
+
+app.register_blueprint(webhook)
 
 @app.route('/')
 def home():
