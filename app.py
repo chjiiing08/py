@@ -1,13 +1,12 @@
+import os
 from flask import Flask
-from webhook import webhook  # blueprint import
 
 app = Flask(__name__)
-app.register_blueprint(webhook)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "✅ 카카오 챗봇 Webhook 서버 작동 중!"
+    return "Hello from Render!"
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))  # Render가 PORT 환경변수로 전달
+    app.run(host='0.0.0.0', port=port)
