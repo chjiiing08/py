@@ -4,7 +4,7 @@ import pymysql
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "happy9672!!",  # 네 비밀번호로 바꿔!
+    "password": "Chj152824!",  # 네 비밀번호로 바꿔!
     "db": "weather",
     "charset": "utf8mb4"
 }
